@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh Tiwari - Personal Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&family=Kaushan+Script&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #ff6b6b, #f7a7b7, #f7d060, #6bff6b, #6b8bff);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background: #1F1F1F;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        header p {
+            font-size: 1.2em;
+            font-family: 'Kaushan Script', cursive;
+            font-weight: normal;
+            color: #D3D3D3;
+        }
+        nav {
+            background: #1F1F1F;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav a {
+            color: #FFFFFF;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #A9A9A9;
+        }
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: rgba(33, 33, 33, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #1F1F1F;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .profile-img {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            width: 180px; /* Increased size */
+            height: 180px; /* Increased size */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            border-radius: 10px;
+            width: 100%;
+        }
+        .goals-list {
+            list-style-type: square;
+            margin-left: 20px;
+            color: white;
+        }
+        .goals-list li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .highlight {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 1.5em;
+            color: #FFFFFF;
+        }
+        .club-section {
+            background-color: #1F1F1F;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .club-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: #FFFFFF;
+        }
+        .club-section p {
+            font-size: 1.2em;
+            color: white;
+        }
+        .club-img {
+            width: 80%;
+            border-radius: 10px;
+        }
+        .contact a:hover {
+            color: #FFD700;
+        }
+        img:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Creative Email Style */
+        .email {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 1.5em;
+            color: #FFD700;
+            text-decoration: none;
+        }
+        .email:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+
+        /* Creative Phone Number Style */
+        .phone {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 1.8em;
+            color: #00FF00;
+            text-decoration: none;
+        }
+        .phone:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+
+        /* Copyright Style */
+        .copyright {
+            font-size: 1em;
+            color: #D3D3D3;
+            margin-top: 20px;
+        }
+
+        /* About Me Section with Watermark Background */
+        section#about {
+            position: relative;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: rgba(33, 33, 33, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        section#about::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media-hosting.imagekit.io//613656a5d7714573/College-Campus.png?Expires=1735745125&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=z9182p8lkTcP-3LUiyD~fHu45F6q-XH61h8pvP0M9eLbo7vLIHMQD5e8nDgCejZbzBE49ClDfw5jDmrHJpCfbIR0xmB2N--~wK~aihVGUMD~Eqm3zhS73N7-XfqsTiEn0vV60bv8vYcOYFfnBLy2CYUwYY94IB0KAtaCKpXbnq-0iCZ3SaApu4Ba7WObUk6GDnevtNJOGJw~oY0rbBEApWcC7ImKfM~LgFruLfbjkoq7isG89fVdB4l5DWSBm83m0BkQ-yBPWQQ5mL6rrEwzjfP3ga-E~TrJPJtocYmCovb5PXHqv5BqSVrmPbhjUhRDGqh3hlyMI8dDCUvKL8opqQ__'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.1; /* Adjust opacity for watermark effect */
+            z-index: 2; /* Keeps the image behind the text */
+        }
+
+        section#about h2 {
+            font-size: 2em;
+            color: #FFFFFF;
+        }
+
+        section#about p {
+            font-size: 1.2em;
+            color: #D3D3D3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Devansh Tiwari's Personal Webpage</h1>
+        <p class="highlight">Your one-stop page to know me better!</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#learning">Current Learning</a>
+        <a href="#goals">2025 Goals</a>
+        <a href="#resolutions">New Year Resolutions</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#club">GeekForGeeks Club</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://media-hosting.imagekit.io//fa2ea7b8496242d1/IMG-20241204-WA0249.jpg?Expires=1735745033&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=aPgQ4rVI4bXma2xZ1slueLWZ79nSpN0H96YRa-ifoj0QzlyXW9MU-jRPNuVedGxUaT5-H-2EJlkm68Lnx2sg0tN69LtPgB4xuQAuCjFC8PLWzAr7ofblJus0FCGLWAV0LflWfjLYPxgx2YgODYIn0xX~pCPvlk09QU0VvYlNpWI5DghO6TQQFxBnkWLRg-XYhtlCk4A2~U-ANm~Z1-KTiqolXXGOZzHm~as6TCuwFmOVngivpPvPL6uENqvzpfFuFrZNr~HsXySPB0QX3YFok2~y5zHv1ZPuidfaD4SmrzHzZquhOSMqZA~ieeInT1h7qrHV8s9J8h3TCK-4s~Rm7g__" alt="Devansh Tiwari" class="profile-img">
+        <p>Hi! I'm Devansh Tiwari, a first-year undergraduate student pursuing B Tech in CSE (Data Science) at Galgotias College of Engineering and Technology. My dream is to become a skilled Data Scientist, and I am passionate about learning and exploring the vast world of data and technology.</p>
+    </section>
+    <section id="learning">
+        <h2>Current Learning</h2>
+        <p>Currently, I have reached the Object-Oriented Programming (OOP) concepts in Python and have a solid understanding of the basics. Starting January, I plan to dive into Data Structures and Algorithms (DSA) to enhance my problem-solving skills.</p>
+    </section>
+    <section id="goals">
+        <h2>Goals for 2025</h2>
+        <ul class="goals-list">
+            <li>Master Data Structures and Algorithms (DSA)</li>
+            <li>Work on real-world projects in Data Science</li>
+            <li>Contribute to open-source Data Science projects</li>
+            <li>Secure an internship in the field of Data Science</li>
+        </ul>
+    </section>
+    <section id="resolutions">
+        <h2>New Year Resolutions</h2>
+        <p><strong>Professional Goals:</strong> I aim to excel in my academics, learn advanced Python libraries like NumPy and Pandas, and build a strong portfolio of projects.</p>
+        <p><strong>Personal Goals:</strong> I plan to focus on improving my health, maintaining a balanced routine, and exploring hobbies like playing football and travelling.</p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Here are some pictures that represent my journey, my college, and my club activities:</p>
+        <div class="gallery">
+            <img src="https://media-hosting.imagekit.io//bfb5a681e40942e0/IMG-20241204-WA0224.jpg?Expires=1735745179&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=cABWAz5MLSfCS89J0zl9cgH3AViiaKVx5uOnoTR6MMsPLDiOb6n64b4vdmWu-~SThA87zfim5pmbq6i1y8PMwf~cbyV9dfl3RmhFK5FgrFUFTpzBWpEaIpEkVaQQdM76FOghl2TR~ccqIPoavAMCM21OENCVv2eaOM7L5Zyv7HSJBCuUHm992BgfAWS6JlvAt77hhEzQQw71fWox7FYCreAlP2ZGPcPSj0GtggdvMU4PMXWJrOepCCCJjXd1yKG~lQQmB4M63ISAPvTylaG1N3Q7FlXvqbUThT9tdOmq73ezmLjxflXAppMHSMNhNvGv-cPuL4EcVMmNKb2nKXbcxw__" alt="Personal Image 1">
+            <img src="https://media-hosting.imagekit.io//0fd8f10dab4c48ab/IMG-20241205-WA0014.jpg?Expires=1735745179&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=SOUxAnSeLQuOdiuK4fku~n~9F~2QBEL4KskJv6IoOeUU03~p9m6VNtQaxze30UaziGeD3d21xNY73Dvxw1nqQa~cLGAjN1ItR4Ij9bnrv9uD1TCg0GLtKJokjgu2cmXTp5m2YbHMhtCG8GXsuqrPwFuP1FiVAKsx0P6MxvA-l4ffQWiBLXDEoiu3SXoJY59J3aj87YCeYNxe6VJ2DGAUDU9ToDX--boYrBnPQoFpiT76dH0RlOds~byFBVvrRAK4fZxmyJ98xIQmr0YiCCcnf8IGIojmgt~zefSEn88yvpdz1s45oUAWh67OA2CA6c5dDGCoTxkoeQXPfqPgw22tlA__" alt="Personal Image 2">
+            <img src="https://media-hosting.imagekit.io//53e98cc6c881410e/IMG-20241120-WA0024.jpg?Expires=1735745251&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=tWyt1kyaCvZSiPWiw39VLTRq0kZ9D-bFd3GSaSEXy91iiRaLiSwIR37soz4J7FTTqkQsR-8-Q6kQtmDPaZN3v49k6gB0MP2yUHr9WZ~08SE1iwbc9Z~19oFizjejtYGMhaIGEAr6c~tMQJ1H43jidCDL2YUrNblsPoKGNnCCeC-9DvgbWsV~9HrShWNRw1Cd4DuYd7Lcn4O87MrrMzMYi~twlRLozR12iMV6zE0NjkdS-sFcqmS1APbX7oB1tgOPtwZJNuxqCNCMKWzf6kj3j-uIdKegOAOBR33acYU8uVXfqfygNjk4QCbfBbNuA4SdNtjdZxouqh6QtUB3OrAIfA__" alt="College Event">
+            <img src="https://media-hosting.imagekit.io//5f2786f09dba469a/1731817230990.jpg?Expires=1735745279&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gFm-fZ96KqYFpC6PMcgO~~S-lMJFFwpgvsjk8nz8hA1Wefeaxt~ZQRSldHtpsbYolNKXzhqT7kEEiL8tYQAB6zr~7J7KvK0QF~92-RAtreEtv1wJ5Ij-wVrqXWBSRVrfnUe~hHET9Y~AtyPwIysN1m-Z68DU73PxU5uaGEimy1OaoOCIyaZWWBKza4QzJ6P9RfHh5fZzAc37ZiN4lur2sUP~aORbjG4sfMGx1er~LMqb1hWQAEKDjRcItgoVyMiDaLxgh2TiMJNH6L9ojLHOm5VUXmSE70piqLaCr7ew6xxBhdzXL9hKQAZAd6XWTS8tfd44UTV1kGG6PFSx0QJ1yA__" alt="GeekForGeeks Club">
+            <img src="https://media-hosting.imagekit.io//d72e5b7ada124255/1731820762640.jpg?Expires=1735745279&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=l05d89u8hOFLR1Wr2KKgNOLiOEvw9yAmHRRq6F7ECMC2zrnoi4STwd3DnnLRZI-o6eXTadRvpokZIOLMCnxJrz1eNTf614mhEEXbI81NQEllpdofs3V7jaVcuAztIck3vgI4U2xQtnq27mGWNmFxYlqytjsez30aQXGDD4~~HespJX3uzBo5OZRplZIfXyWkHZyzgeGvGcOITjLgn6L0~6PANQu0pSvtrx2-fCEXjlmdnJmH6xEl5OjWOgcvQ4FMldVcEvHjRKQP9YlK3sjqJ6o648u6oXQwOe5JgsqUNaAIxQm-AKJivaKm0sO1zXI7rWI5SzWYSDS81~rwZWtUEQ__" alt="GeekForGeeks Event">
+        </div>
+    </section>
+    <section id="club" class="club-section">
+        <h2>GeekForGeeks Club</h2>
+        <img src="https://media-hosting.imagekit.io//926e012f89d5414e/icon.png?Expires=1735744726&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ivd5k9PJqGhsTNa55tyjgM-BgYyxJjGgYK9yfSjO9VnUacph9Iy3GWBFxb1ehMEbz4z5Z3tthVPEjNgLmhm4mwG5OK6UlXqAalZyaN~RuDpFrrmnodLGZyQKBNVIIhnYQ92REGrAtXUAqaKQSU5K7eLL1ucRec2ROSIAxRvfKwTyDA8cj0Uj-gzsq705hTF82qLWnhWFRdwkc53RbluurnWWu46-Oga908peOvlE5hfpHBODFIQ~PSEdBm2nFZa36JvYec0KOMhDoMvS8D-q~Mnl4ABglZgqJ-Ju0c58tGSu659oMSQ7NXVu0P1KqVRHWOaeT7ePztMYkm5LEcDydA__" alt="GeekForGeeks Club" class="club-img">
+        <p>Being a member of **GeekForGeeks** has been an incredible experience. It's a community of passionate individuals who are dedicated to learning and sharing knowledge about programming, coding, and technology. The club provides a platform for students to improve their coding skills, participate in competitive programming contests, and collaborate on exciting tech projects.</p>
+        <p>We work on **real-world problems**, **learn new technologies**, and **organize workshops** to help others grow in the tech field. The environment is collaborative, and the club has become a great place for me to network, learn, and contribute to various tech-related initiatives.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact">📞 <a href="tel:+91966765XXXX" class="phone">91966765XXXX</a></p>
+        <p class="contact">📧 <a href="mailto:devansh.24gcebxxxx@galgotiacollege.edu" class="email">devansh.24gcebxxxx@galgotiacollege.edu"</a></p>
+    </section>
+    <footer>
+        <p class="copyright">&copy; 2024 Devansh Tiwari. All rights reserved.</p>
+    </footer>
+</body>
+</html>
